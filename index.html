@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport Noise</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__menu" id="headerMenu">
+        <div class="header__menu__body">
+          <div class="header__menu__btns">
+            <div></div>
+            <div class="header__menu__close" id="headerMenuClose">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="19"
+                fill="none"
+                viewBox="0 0 18 19"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="m16.791 17.86 1.768-1.767-7.071-7.072 7.071-7.07L16.791.182l-7.07 7.07L2.648.184.881 1.95l7.071 7.071-7.07 7.072 1.767 1.767 7.071-7.07 7.071 7.07Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <ul class="header__menu__body__pages">
+            <li class="header__menu__body__pages__link">
+              <a href="#">Проекты</a>
+            </li>
+            <li class="header__menu__body__pages__link">
+              <a href="#">Услуги</a>
+            </li>
+            <li class="header__menu__body__pages__link">
+              <a href="#">О нас</a>
+            </li>
+          </ul>
+          <ul class="header__menu__body__forms">
+            <li class="header__menu__body__forms__link">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd3m57aXVTB-0EKbo3nQ_lPyx7SA2KIdw6TqOXr71Q6J8--eQ/viewform"
+                >● Заполнить бриф</a
+              >
+            </li>
+            <li class="header__menu__body__forms__link">
+              <a href="#" id="modalWindowOpen">● Дизайн аудит</a>
+            </li>
+            <li class="header__menu__body__forms__link">
+              <a href="#">● Пригласить в тендер</a>
+            </li>
+          </ul>
+          <div class="blue-button" id="headerMenuForm">
+            <span>Обсудить проект</span>
+          </div>
+          <div class="header__menu__body__info">
+            <a href="mailto:hello@sportnoise.ru" class="header__menu__mail"
+              >hello@sportnoise.ru</a
+            >
+            <span>Москва, ул. Полковая д. 3, стр. 6 </span>
+            <a href="tel:+74957558538">+7 (495) 755-85-38 </a>
+            <a href="https://t.me/sportnoise">Telegram-чат </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__wrapper">
+        <a href="/">
+          <img src="img/logo.webp" alt="" />
+        </a>
+        <div class="header__menu-btn blue-button" id="headerMenuOpen">
+          <span>Меню</span>
+        </div>
+      </div>
+      <div class="modal-window" id="modalWindow">
+        <div class="modal-window__wrapper">
+          <div class="modal-window__body">
+            <div class="modal-window__top">
+              <h2>
+                Получите консультацию <br />
+                или узнайте стоимость проекта
+              </h2>
+              <div class="modal-window__close" id="modalWindowClose">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="19"
+                  fill="none"
+                  viewBox="0 0 18 19"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="m16.791 17.86 1.768-1.767-7.071-7.072 7.071-7.07L16.791.182l-7.07 7.07L2.648.184.881 1.95l7.071 7.071-7.07 7.072 1.767 1.767 7.071-7.07 7.071 7.07Z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <form>
+              <div class="modal-window__inputs">
+                <input
+                  class="modal-window__input"
+                  name="name"
+                  placeholder="Имя"
+                  type="text"
+                /><input
+                  class="modal-window__input"
+                  name="email"
+                  placeholder="E-mail"
+                  type="text"
+                /><input
+                  class="modal-window__input"
+                  name="company"
+                  placeholder="Название компании"
+                  type="text"
+                />
+              </div>
+              <div class="modal-window__interests">
+                <h3>Что вас интересует?</h3>
+                <div class="modal-window__interests__blocks">
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">логотип</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">фирменный стиль</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">брендинг</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">веб-разработка</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">комплексные услуги</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">дизайн аудит</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">дизайн сопровождение</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">техническое партнерство</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">тендер</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">другое</span></label
+                  >
+                </div>
+              </div>
+              <div class="modal-window__comments">
+                <h3 class="">Комментарий</h3>
+                <textarea
+                  class=""
+                  placeholder="Опишите задачу, сроки
+и пожелания к проекту"
+                  name="commentary"
+                ></textarea>
+              </div>
+              <div class="modal-window__personal">
+                <div class="modal-window__personal__wrapper">
+                  <input name="personalData" type="checkbox" checked="" /><label
+                    class="text-[13px] tracking-[4%] leading-[17px] font-medium text-grey"
+                    >Я соглашаюсь с обработкой
+                    <span class="text-blue"
+                      ><a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://disk.yandex.ru/d/CFt-0eN46Vt4jQ"
+                        >персональных данных</a
+                      ></span
+                    ></label
+                  >
+                </div>
+              </div>
+              <div class="modal-window__bottom">
+                <div class="hidden lg:block">
+                  <div>
+                    <label
+                      ><input class="hidden" type="file" name="file" />
+                      <p
+                        class="flex flex-row items-center gap-3 text-[17px] tracking-[0.4px] leading-[30px] font-medium text-blue"
+                      >
+                        <img
+                          alt="attach-file"
+                          loading="lazy"
+                          width="25"
+                          height="25"
+                          decoding="async"
+                          data-nimg="1"
+                          src="/_next/static/media/check2.6f3ebde9.svg"
+                          style="color: transparent"
+                        /><span>sale_basket.xls</span>
+                      </p></label
+                    >
+                  </div>
+                </div>
+                <button type="submit" class="blue-button">
+                  <span class="">Отправить</span>
+                </button>
+              </div>
+            </form>
+            <div
+              class="flex sm:hidden justify-center items-center mt-7 mb-[3.2rem]"
+            >
+              <button
+                type="button"
+                class="rounded-full px-7 py-2 border-[1px] border-solid border-line xl:hover:border-hover transition ease-in-out duration-400 text-blue xl:hover:text-hover"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="19"
+                  fill="none"
+                  viewBox="0 0 18 19"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="m16.791 17.86 1.768-1.767-7.071-7.072 7.071-7.07L16.791.182l-7.07 7.07L2.648.184.881 1.95l7.071 7.071-7.07 7.072 1.767 1.767 7.071-7.07 7.071 7.07Z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main"></main>
+    <footer class="footer"></footer>
+    <script src="js/script.js"></script>
+    <script src="js/modalWindow.js"></script>
+  </body>
+</html>

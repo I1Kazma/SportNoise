@@ -1,0 +1,223 @@
+.modal-window
+    z-index: -1
+    opacity: 0
+    width: 100vw
+    height: 100vh
+    position: fixed
+    background: rgba(0, 0, 0, 0.7)
+    top: 0
+    left: 0
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &.open
+        z-index: 99999
+        opacity: 1
+
+    .modal-window__wrapper
+        display: block
+        background: #fff
+        width: 96%
+        height: 96%
+        max-width: 600px
+        max-height: 1000px
+        padding: 2rem
+        animation: styles_modalOpen__E8h6_ .3s ease-out
+
+    @keyframes styles_modalOpen__E8h6_
+        0%
+            opacity: .4
+            transform: scale(0.9)
+
+        100%
+            opacity: 1
+            transform: scale(1)
+
+    .modal-window__body
+        display: flex
+        flex-direction: column
+        gap: 4px
+
+        h3
+            line-height: 24px
+            font-size: 19px
+            letter-spacing: 2%
+            line-height: 21px
+            font-weight: 500
+
+        .modal-window__top
+            align-items: flex-start
+            display: flex
+            gap: 32px
+            justify-content: space-between
+            flex-direction: row
+
+            @media (max-width: 640px)
+                display: none
+
+            h2
+                letter-spacing: 0.14px
+                line-height: 38px
+                font-weight: 500
+                font-size: 28px
+                align-self: flex-end
+
+            .modal-window__close
+                padding: 0.5rem 1.75rem
+                border: 1px solid $grey
+                border-radius: 9999px
+                cursor: pointer
+                display: flex
+                justify-content: center
+                align-items: center
+
+                &:hover
+                    border: 1px solid $blue-hover
+                    svg
+                        path
+                            fill: $blue-hover
+
+                svg
+                    path
+                        fill: $blue
+
+        form
+            display: flex
+            flex-direction: column
+            gap: 20px
+
+        .modal-window__inputs
+            gap: 15px
+            flex-direction: column
+            display: flex
+
+            .modal-window__input
+                border: 1px solid $blue
+                line-height: 28px
+                font-size: 28px
+                letter-spacing: 0.5px
+                line-height: 26px
+                font-weight: 500
+                font-size: 15px
+                padding-left: 21px
+                padding-top: 10px
+                padding-bottom: 10px
+                border-style: solid
+                border-width: 1px
+                border-radius: 9999px
+                outline: none
+
+                &::-moz-placeholder
+                    сolor: $blue
+
+                &::-webkit-input-placeholder
+                    сolor: $blue
+
+                &:-ms-input-placeholder
+                    сolor: $blue
+
+                &::-moz-placeholder
+                    сolor: $blue
+
+        .modal-window__interests
+            display: flex
+            flex-direction: column
+            gap: 30px
+            padding-bottom: 30px
+
+            .modal-window__interests__blocks
+                display: flex
+                gap: 25px
+                flex-wrap: wrap
+
+                label
+                    cursor: pointer
+
+                    input
+                        display: none
+
+                    input[type=checkbox]:checked~span
+                        background: #324590
+                        color: #fff
+
+                    span
+                        border: 1px solid #a9b2d9
+                        padding: 8px 15px
+                        color: #324590
+                        border-radius: 30px
+                        font-size: 13px
+                        letter-spacing: 4%
+                        line-height: 17px
+                        font-weight: 500
+                        transition: .5s ease-in-out
+                        -webkit-user-select: none
+                        -moz-user-select: none
+                        user-select: none
+
+        .modal-window__comments
+            display: flex
+            flex-direction: column
+            gap: 12px
+            textarea
+                resize: none
+                outline: none
+                height: 146px
+                --tw-text-opacity: 1
+                color: rgb(32 33 36 / var(--tw-text-opacity))
+                letter-spacing: 0.4px
+                line-height: 30px
+                font-size: 17px
+                padding: 16px 20px
+                --tw-border-opacity: 1
+                border-color: rgb(169 178 217 / var(--tw-border-opacity))
+                border-style: solid
+                border-width: 1px
+                border-radius: 10px
+                width: 100%
+
+                &:hover
+                    border: 1px solid $blue
+
+        .modal-window__personal
+
+            .modal-window__personal__wrapper
+                gap: 0.75rem
+                align-items: center
+                flex-direction: row
+                display: flex
+
+            input
+                appearance: none
+                outline: none
+                position: relative
+                width: 25px
+                height: 25px
+                border: 2px solid #324590
+                border-radius: 50%
+                overflow: hidden
+                cursor: pointer
+
+            input[type=checkbox]:checked::before
+                transform: scale(1)
+
+            input[type=checkbox]::before
+                content: ""
+                position: absolute
+                top: 0px
+                right: 0px
+                bottom: 0px
+                left: 0.5px
+                background-color: rgba(0, 0, 0, 0)
+                background-size: 70%
+                background-position: center center
+                background-repeat: no-repeat
+                border-radius: 2px
+                transform: scale(0)
+                transition: transform .25s ease-in-out
+                background-image: url("../img/tick.svg")
+
+        .modal-window__bottom
+            display: flex
+            justify-content: space-between
+            gap: 10px

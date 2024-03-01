@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/*Цвета проекта*/
+/*Общие стили проекта*/
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  transition: 150ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  background-color: #E7ECF3;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 20px;
+}
+html::-webkit-scrollbar-track {
+  border: 4px solid #fff;
+}
+
+body, ul, li, a, button, h1, h2, h3, h4, input, textarea {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+textarea, input {
+  outline: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blue-button {
+  padding: 8px 16px;
+  background: #324590;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.blue-button:hover {
+  background: #4353FF;
+}
+.blue-button span {
+  letter-spacing: 0.025em;
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 17px;
+  color: white;
+}
+
+.body-block {
+  overflow-y: hidden;
+}/*# sourceMappingURL=style.css.map */
