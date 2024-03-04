@@ -24,6 +24,8 @@
         max-height: 1000px
         padding: 2rem
         animation: styles_modalOpen__E8h6_ .3s ease-out
+        overflow: scroll
+        position: relative
 
     @keyframes styles_modalOpen__E8h6_
         0%
@@ -38,6 +40,7 @@
         display: flex
         flex-direction: column
         gap: 4px
+        position: relative
 
         h3
             line-height: 24px
@@ -53,15 +56,18 @@
             justify-content: space-between
             flex-direction: row
 
-            @media (max-width: 640px)
-                display: none
-
             h2
                 letter-spacing: 0.14px
                 line-height: 38px
                 font-weight: 500
                 font-size: 28px
                 align-self: flex-end
+
+                @media (max-width: 640px)
+                    letter-spacing: 0.13px
+                    line-height: 25px
+                    font-weight: 500
+                    font-size: 19px
 
             .modal-window__close
                 padding: 0.5rem 1.75rem
@@ -71,6 +77,14 @@
                 display: flex
                 justify-content: center
                 align-items: center
+
+                @media (max-width: 768px)
+                    position: absolute
+                    bottom: 0px
+                    left: calc(60% - 100px)
+
+                @media (max-width: 450px)
+                    left: calc(68% - 100px)
 
                 &:hover
                     border: 1px solid $blue-hover
@@ -85,7 +99,7 @@
         form
             display: flex
             flex-direction: column
-            gap: 20px
+            gap: 34px
 
         .modal-window__inputs
             gap: 15px
@@ -197,6 +211,7 @@
                 border-radius: 50%
                 overflow: hidden
                 cursor: pointer
+                flex-shrink: 0
 
             input[type=checkbox]:checked::before
                 transform: scale(1)
@@ -207,7 +222,7 @@
                 top: 0px
                 right: 0px
                 bottom: 0px
-                left: 0.5px
+                left: 1px
                 background-color: rgba(0, 0, 0, 0)
                 background-size: 70%
                 background-position: center center
@@ -221,3 +236,41 @@
             display: flex
             justify-content: space-between
             gap: 10px
+            align-items: center
+
+            @media (max-width: 768px)
+                padding-bottom: 80px
+
+            .modal-window__bottom__file
+                @media (max-width: 768px)
+                    display: none
+            label
+
+                input
+                    display: none
+
+                .modal-window__addfile
+                    letter-spacing: 0.4px
+                    line-height: 30px
+                    font-weight: 500
+                    font-size: 17px
+                    gap: 0.75rem
+                    align-items: center
+                    flex-direction: row
+                    display: flex
+                    cursor: pointer
+
+                    img
+
+                    span
+                        letter-spacing: 0.4px
+                        line-height: 30px
+                        font-weight: 500
+                        font-size: 17px
+                        color: $blue
+
+            .blue-button
+                padding: 18px 72px
+
+                @media (max-width: 768px)
+                    width: 100%

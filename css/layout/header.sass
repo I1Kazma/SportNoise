@@ -5,8 +5,28 @@
         justify-content: space-between
         background: white
 
+        @media (min-width: 1024px)
+            padding: 32px 128px
+
+        @media (max-width: 1024px)
+            padding: 32px 64px
+
+        @media (max-width: 768px)
+            padding: 32px 1.25rem
+
     .header__menu-btn
         height: 44px
+        position: fixed
+        right: 128px
+        display: block
+        z-index: 2
+
+        @media (max-width: 1024px)
+            right: 64px
+
+        @media (max-width: 768px)
+            bottom: 20px
+            right: 40%
 
     img
         max-width: 200px
@@ -48,18 +68,25 @@
                 width: 100%
                 justify-content: space-between
                 padding-bottom: 20px
+                margin: 58px 1.25px 0px
+
+                @media (max-width:1024px)
+                    border-bottom: 1px solid $blue
 
             .header__menu__close
                 padding: 0.5rem 1.75rem
                 border: 1px solid $grey
                 border-radius: 9999px
                 cursor: pointer
-                margin: 58px 1.25px 0px
 
                 display: flex
                 justify-content: center
                 align-items: center
 
+                @media (max-width: 768px)
+                    position: absolute
+                    bottom: 20px
+                    left: 44%
                 &:hover
                     border: 1px solid $blue-hover
 
@@ -83,10 +110,18 @@
                 text-transform: uppercase
 
                 .header__menu__body__pages__link
-                    line-height: 57px
+
+                    @media (max-width:1024px)
+                        border-bottom: 1px solid $blue
 
                     a:hover
                         color: $blue-hover
+
+                    a
+                        line-height: 57px
+                        @media (max-width: 1024px)
+                            font-size: 26px
+                            line-height: 32px
 
             .header__menu__body__forms
                 line-height: 30px
