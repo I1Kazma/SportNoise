@@ -37,39 +37,60 @@
           </div>
           <ul class="header__menu__body__pages">
             <li class="header__menu__body__pages__link">
-              <a href="#">Проекты</a>
+              <a class="opacity-anim" href="#">Проекты</a>
             </li>
             <li class="header__menu__body__pages__link">
-              <a href="#">Услуги</a>
+              <a class="opacity-anim" href="#">Услуги</a>
             </li>
             <li class="header__menu__body__pages__link">
-              <a href="#">О нас</a>
+              <a class="opacity-anim" href="#">О нас</a>
             </li>
           </ul>
           <ul class="header__menu__body__forms">
             <li class="header__menu__body__forms__link">
               <a
+                class="opacity-anim"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSd3m57aXVTB-0EKbo3nQ_lPyx7SA2KIdw6TqOXr71Q6J8--eQ/viewform"
                 >● Заполнить бриф</a
               >
             </li>
             <li class="header__menu__body__forms__link">
-              <a href="#" id="modalWindowOpen">● Дизайн аудит</a>
+              <a href="#" class="opacity-anim" id="modalWindowOpen"
+                >● Дизайн аудит</a
+              >
             </li>
             <li class="header__menu__body__forms__link">
-              <a href="#">● Пригласить в тендер</a>
+              <a class="opacity-anim" href="#">● Пригласить в тендер</a>
             </li>
           </ul>
-          <div class="blue-button" id="headerMenuForm">
-            <span>Обсудить проект</span>
+          <div class="blue-button__wrapper">
+            <div class="blue-button opacity-anim" id="headerMenuForm">
+              <span>Обсудить проект</span>
+            </div>
           </div>
           <div class="header__menu__body__info">
-            <a href="mailto:hello@sportnoise.ru" class="header__menu__mail"
-              >hello@sportnoise.ru</a
-            >
-            <span>Москва, ул. Полковая д. 3, стр. 6 </span>
-            <a href="tel:+74957558538">+7 (495) 755-85-38 </a>
-            <a href="https://t.me/sportnoise">Telegram-чат </a>
+            <div class="header__menu__body__info__link">
+              <a
+                href="mailto:hello@sportnoise.ru"
+                class="header__menu__mail opacity-anim"
+                >hello@sportnoise.ru</a
+              >
+            </div>
+            <div class="header__menu__body__info__link">
+              <span class="opacity-anim"
+                >Москва, ул. Полковая д. 3, стр. 6
+              </span>
+            </div>
+            <div class="header__menu__body__info__link">
+              <a class="opacity-anim" href="tel:+74957558538"
+                >+7 (495) 755-85-38
+              </a>
+            </div>
+            <div class="header__menu__body__info__link">
+              <a class="opacity-anim" href="https://t.me/sportnoise"
+                >Telegram-чат
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -265,7 +286,51 @@
         </div>
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <section class="video-banner" id="masthead">
+        <div class="video-banner__wrapper">
+          <video
+            autoplay=""
+            loop=""
+            muted=""
+            playsinline=""
+            preload="auto"
+            class="styles_videoContainer__MurWu absolute w-full h-full object-cover"
+          >
+            <source
+              src="video/masthead-video.mp4"
+              type="video/mp4; codecs=hvc1"
+            />
+            <source
+              src="video/masthead-video.webm"
+              type="video/webm; codecs=vp9"
+            />
+          </video>
+          <div class="masthead-container">
+            <h1>
+              <div
+                class="masthead-container__line"
+                style="display: block; text-align: start; width: 100%"
+              >
+                <div class="line opacity-anim opacity">Digital-решения для</div>
+              </div>
+              <div
+                class="masthead-container__line"
+                style="display: block; text-align: start; width: 100%"
+              >
+                <div class="line opacity-anim">развития спортивных</div>
+              </div>
+              <div
+                class="masthead-container__line"
+                style="display: block; text-align: start; width: 100%"
+              >
+                <div class="line opacity-anim">и клубных брендов</div>
+              </div>
+            </h1>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__layout">
         <div class="footer__layout__info">

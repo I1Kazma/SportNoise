@@ -12,3 +12,17 @@ headerMenuClose.onclick = () => {
     document.body.classList.remove("body-block")
 };
 
+function onEntry(entry) {
+    entry.forEach(change => {
+        if (change.isIntersecting) {
+            change.target.classList.add('opacity-show');
+        }
+    });
+}
+let options = { threshold: [0.1] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.opacity-anim');
+for (let elm of elements) {
+    observer.observe(elm);
+}
+
