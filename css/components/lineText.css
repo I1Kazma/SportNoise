@@ -1,0 +1,57 @@
+.page-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 106px;
+}
+@media (max-width: 768px) {
+  .page-text {
+    margin-bottom: 48px;
+  }
+}
+.page-text span {
+  max-width: 997px;
+  display: flex;
+  flex-direction: column;
+}
+.page-text span .lineParent {
+  overflow: hidden;
+}
+.page-text span .lineParent .line {
+  letter-spacing: -0.2px;
+  line-height: 52px;
+  font-size: 37px;
+  color: black;
+  font-weight: 500;
+}
+@media (max-width: 1280px) {
+  .page-text span .lineParent .line {
+    line-height: 38px;
+    font-size: 28px;
+  }
+}
+@media (max-width: 1024px) {
+  .page-text span .lineParent .line {
+    letter-spacing: -0.5px;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+.page-text span .lineParent .line.transform-anim {
+  transform: translateY(50px);
+}
+@media (max-width: 1280px) {
+  .page-text span .lineParent .line.transform-anim {
+    transform: translateY(35px);
+  }
+}
+@media (max-width: 1024px) {
+  .page-text span .lineParent .line.transform-anim {
+    transform: translateY(20px);
+  }
+}
+.page-text span .lineParent .line.transform-show {
+  transform: translateY(0px);
+}/*# sourceMappingURL=lineText.css.map */

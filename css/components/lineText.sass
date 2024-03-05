@@ -1,0 +1,46 @@
+.page-text
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-bottom: 106px
+
+    @media (max-width: 768px)
+        margin-bottom: 48px
+
+    span
+        max-width: 997px
+        display: flex
+        flex-direction: column
+
+        .lineParent
+            overflow: hidden
+
+            .line
+                letter-spacing: -0.2px
+                line-height: 52px
+                font-size: 37px
+                color: black
+                font-weight: 500
+
+                @media (max-width: 1280px)
+                    line-height: 38px
+                    font-size: 28px
+
+                @media (max-width: 1024px)
+                    letter-spacing: -0.5px
+                    line-height: 30px
+                    font-weight: 500
+                    font-size: 20px
+
+            .line.transform-anim
+                transform: translateY(50px)
+
+                @media (max-width: 1280px)
+                    transform: translateY(35px)
+
+                @media (max-width: 1024px)
+                    transform: translateY(20px)
+
+            .line.transform-show
+                transform: translateY(0px)
