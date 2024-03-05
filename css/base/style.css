@@ -48,11 +48,11 @@ a {
 
 .opacity-anim {
   transform: translateY(70px);
+  transition: transform 1.5s;
 }
 
 .opacity-anim.opacity-show {
   transform: translateY(0px);
-  transition: transform 1.5s;
 }
 
 .blue-button {
