@@ -48,11 +48,17 @@ a
     text-decoration: none
     color: inherit
 
-.opacity-anim
+.transform-anim
     transform: translateY(70px)
     transition: transform 1.5s
 
-.opacity-anim.opacity-show
+    @media (max-width: 1280px)
+        transform: translateY(50px)
+
+    @media (max-width: 768px)
+        transform: translateY(40px)
+
+.transform-anim.transform-show
     transform: translateY(0px)
 
 .blue-button

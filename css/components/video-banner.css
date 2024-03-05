@@ -96,6 +96,7 @@
   .video-banner .video-banner__wrapper .masthead-container h1 {
     font-size: 32px;
     bottom: 20px;
+    line-height: 30px;
   }
 }
 @media (max-width: 640px) {
@@ -107,12 +108,12 @@
   overflow: hidden;
   padding-bottom: 0.65rem;
 }
-.video-banner .video-banner__wrapper .masthead-container h1 .masthead-container__line:first-child .line.opacity-anim {
+.video-banner .video-banner__wrapper .masthead-container h1 .masthead-container__line:first-child .line.transform-anim {
   transition-delay: 0.3s;
 }
-.video-banner .video-banner__wrapper .masthead-container h1 .masthead-container__line:nth-child(2) .line.opacity-anim {
+.video-banner .video-banner__wrapper .masthead-container h1 .masthead-container__line:nth-child(2) .line.transform-anim {
   transition-delay: 0.4s;
 }
-.video-banner .video-banner__wrapper .masthead-container h1 .masthead-container__line:nth-child(3) .line.opacity-anim {
+.video-banner .video-banner__wrapper .masthead-container h1 .masthead-container__line:nth-child(3) .line.transform-anim {
   transition-delay: 0.5s;
 }/*# sourceMappingURL=video-banner.css.map */

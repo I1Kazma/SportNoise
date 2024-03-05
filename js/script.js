@@ -15,13 +15,13 @@ headerMenuClose.onclick = () => {
 function onEntry(entry) {
     entry.forEach(change => {
         if (change.isIntersecting) {
-            change.target.classList.add('opacity-show');
+            change.target.classList.add('transform-show');
         }
     });
 }
-let options = { threshold: [0.1] };
+let options = { threshold: [0.001] };
 let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('.opacity-anim');
+let elements = document.querySelectorAll('.transform-anim');
 for (let elm of elements) {
     observer.observe(elm);
 }

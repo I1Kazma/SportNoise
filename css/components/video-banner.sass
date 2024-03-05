@@ -77,6 +77,7 @@
                 @media (max-width: 768px)
                     font-size: 32px
                     bottom: 20px
+                    line-height: 30px
 
                 @media (max-width: 640px)
                     font-size: 26px
@@ -85,11 +86,14 @@
                     overflow: hidden
                     padding-bottom: 0.65rem
 
-                .masthead-container__line:first-child .line.opacity-anim
-                    transition-delay: 0.3s
+                .masthead-container__line:first-child
+                    .line.transform-anim
+                        transition-delay: 0.3s
 
-                .masthead-container__line:nth-child(2) .line.opacity-anim
-                    transition-delay: 0.4s
+                .masthead-container__line:nth-child(2)
+                    .line.transform-anim
+                        transition-delay: 0.4s
 
-                .masthead-container__line:nth-child(3) .line.opacity-anim
-                    transition-delay: 0.5s
+                .masthead-container__line:nth-child(3)
+                    .line.transform-anim
+                        transition-delay: 0.5s
