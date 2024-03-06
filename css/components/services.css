@@ -1,0 +1,94 @@
+.services {
+  padding: 0px 128px;
+  margin-top: 60px;
+  background-color: rgb(247, 247, 249);
+  margin-bottom: 180px;
+}
+@media (max-width: 1024px) {
+  .services {
+    padding: 0px 64px;
+  }
+}
+@media (max-width: 768px) {
+  .services {
+    padding: 0px 1.25rem;
+    margin-top: 91px;
+  }
+}
+.services h2 {
+  font-size: 97px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  line-height: 64px;
+  padding: 70px 0px;
+}
+@media (max-width: 1536px) {
+  .services h2 {
+    font-size: 96px;
+    padding-top: 0px;
+  }
+}
+@media (max-width: 1280px) {
+  .services h2 {
+    line-height: 32px;
+    font-size: 72px;
+    padding-top: 25px;
+  }
+}
+@media (max-width: 1024px) {
+  .services h2 {
+    font-size: 51px;
+    padding: 70px 0px 46px;
+  }
+}
+.services .services__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+@media (max-width: 768px) {
+  .services .services__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 16px;
+  }
+}
+.services .services__items .services__item {
+  background-color: #fff;
+  padding: 32px 24px;
+  border-radius: 24px;
+}
+@media (max-width: 1024px) {
+  .services .services__items .services__item {
+    background-color: #fff;
+    padding: 8px 18px;
+    border-radius: 24px;
+  }
+}
+.services .services__items .services__item .services__item__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.services .services__items .services__item .services__item__wrapper h5 {
+  font-size: 37px;
+  color: rgb(50, 69, 144);
+  line-height: 52px;
+  letter-spacing: -1%;
+  font-weight: 500;
+}
+@media (max-width: 1280px) {
+  .services .services__items .services__item .services__item__wrapper h5 {
+    font-size: 23px;
+  }
+}
+.services .services__items .services__item .services__item__wrapper h5 .services__item__wrapper__dot {
+  font-size: 48px;
+}
+@media (max-width: 1024px) {
+  .services .services__items .services__item .services__item__wrapper h5 .services__item__wrapper__dot {
+    font-size: 32px;
+  }
+}/*# sourceMappingURL=services.css.map */

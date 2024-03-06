@@ -1,6 +1,5 @@
 .showreel-banner {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding: 0px 128px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -8,8 +7,12 @@
 }
 @media (max-width: 1024px) {
   .showreel-banner {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0px 64px;
+  }
+}
+@media (max-width: 768px) {
+  .showreel-banner {
+    padding: 0px 1.25rem;
   }
 }
 .showreel-banner .showreel-banner__wrapper {

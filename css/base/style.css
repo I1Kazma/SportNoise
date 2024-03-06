@@ -65,6 +65,15 @@ a {
   transform: translateY(0px);
 }
 
+.opacity-anim {
+  opacity: 0;
+}
+
+.opacity-anim.opacity-show {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
 .blue-button {
   padding: 8px 16px;
   background: #324590;
