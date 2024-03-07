@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport Noise</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="header" id="toTop">
+      <div class="header__menu" id="headerMenu">
+        <div class="header__menu__body">
+          <div class="header__menu__btns">
+            <div></div>
+            <div class="header__menu__close" id="headerMenuClose">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="19"
+                fill="none"
+                viewBox="0 0 18 19"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="m16.791 17.86 1.768-1.767-7.071-7.072 7.071-7.07L16.791.182l-7.07 7.07L2.648.184.881 1.95l7.071 7.071-7.07 7.072 1.767 1.767 7.071-7.07 7.071 7.07Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <ul class="header__menu__body__pages">
+            <li class="header__menu__body__pages__link">
+              <a class="transform-anim" href="#">Проекты</a>
+            </li>
+            <li class="header__menu__body__pages__link">
+              <a class="transform-anim" href="#">Услуги</a>
+            </li>
+            <li class="header__menu__body__pages__link">
+              <a class="transform-anim" href="#">О нас</a>
+            </li>
+          </ul>
+          <ul class="header__menu__body__forms">
+            <li class="header__menu__body__forms__link">
+              <a
+                class="transform-anim"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd3m57aXVTB-0EKbo3nQ_lPyx7SA2KIdw6TqOXr71Q6J8--eQ/viewform"
+                >● Заполнить бриф</a
+              >
+            </li>
+            <li class="header__menu__body__forms__link">
+              <a href="#" class="transform-anim" id="modalWindowOpen"
+                >● Дизайн аудит</a
+              >
+            </li>
+            <li class="header__menu__body__forms__link">
+              <a class="transform-anim" href="#">● Пригласить в тендер</a>
+            </li>
+          </ul>
+          <div class="blue-button__wrapper">
+            <div class="blue-button transform-anim" id="headerMenuForm">
+              <span>Обсудить проект</span>
+            </div>
+          </div>
+          <div class="header__menu__body__info">
+            <div class="header__menu__body__info__link">
+              <a
+                href="mailto:hello@sportnoise.ru"
+                class="header__menu__mail transform-anim"
+                >hello@sportnoise.ru</a
+              >
+            </div>
+            <div class="header__menu__body__info__link">
+              <span class="transform-anim"
+                >Москва, ул. Полковая д. 3, стр. 6
+              </span>
+            </div>
+            <div class="header__menu__body__info__link">
+              <a class="transform-anim" href="tel:+74957558538"
+                >+7 (495) 755-85-38
+              </a>
+            </div>
+            <div class="header__menu__body__info__link">
+              <a class="transform-anim" href="https://t.me/sportnoise"
+                >Telegram-чат
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__wrapper">
+        <a href="/">
+          <img src="img/logo.webp" alt="" />
+        </a>
+        <div class="header__menu-btn blue-button" id="headerMenuOpen">
+          <span>Меню</span>
+        </div>
+      </div>
+      <div class="modal-window" id="modalWindow">
+        <div class="modal-window__wrapper">
+          <div class="modal-window__body">
+            <div class="modal-window__top">
+              <h2>
+                Получите консультацию <br />
+                или узнайте стоимость проекта
+              </h2>
+              <div class="modal-window__close" id="modalWindowClose">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="19"
+                  fill="none"
+                  viewBox="0 0 18 19"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="m16.791 17.86 1.768-1.767-7.071-7.072 7.071-7.07L16.791.182l-7.07 7.07L2.648.184.881 1.95l7.071 7.071-7.07 7.072 1.767 1.767 7.071-7.07 7.071 7.07Z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <form>
+              <div class="modal-window__inputs">
+                <input
+                  class="modal-window__input"
+                  name="name"
+                  placeholder="Имя"
+                  type="text"
+                /><input
+                  class="modal-window__input"
+                  name="email"
+                  placeholder="E-mail"
+                  type="text"
+                /><input
+                  class="modal-window__input"
+                  name="company"
+                  placeholder="Название компании"
+                  type="text"
+                />
+              </div>
+              <div class="modal-window__interests">
+                <h3>Что вас интересует?</h3>
+                <div class="modal-window__interests__blocks">
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">логотип</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">фирменный стиль</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">брендинг</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">веб-разработка</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">комплексные услуги</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">дизайн аудит</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">дизайн сопровождение</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">техническое партнерство</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">тендер</span></label
+                  >
+                  <label
+                    ><input
+                      class="hidden"
+                      type="checkbox"
+                      name="checkbox"
+                      value="фирменный стиль"
+                    /><span class="">другое</span></label
+                  >
+                </div>
+              </div>
+              <div class="modal-window__comments">
+                <h3 class="">Комментарий</h3>
+                <textarea
+                  class=""
+                  placeholder="Опишите задачу, сроки
+и пожелания к проекту"
+                  name="commentary"
+                ></textarea>
+              </div>
+              <div class="modal-window__personal">
+                <div class="modal-window__personal__wrapper">
+                  <input name="personalData" type="checkbox" checked="" /><label
+                    class="text-[13px] tracking-[4%] leading-[17px] font-medium text-grey"
+                    >Я соглашаюсь с обработкой
+                    <span class="text-blue"
+                      ><a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://disk.yandex.ru/d/CFt-0eN46Vt4jQ"
+                        >персональных данных</a
+                      ></span
+                    ></label
+                  >
+                </div>
+              </div>
+              <div class="modal-window__bottom">
+                <div class="modal-window__bottom__file">
+                  <div>
+                    <label
+                      ><input class="hidden" type="file" name="file" />
+                      <p class="modal-window__addfile">
+                        <img
+                          alt="attach-file"
+                          loading="lazy"
+                          width="25"
+                          height="25"
+                          decoding="async"
+                          data-nimg="1"
+                          src="img/plus.svg"
+                          style="color: transparent"
+                        /><span>Прикрепить файл</span>
+                      </p></label
+                    >
+                  </div>
+                </div>
+                <button type="submit" class="blue-button">
+                  <span class="">Отправить</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="project-info">
+        <img class="project-info__img" src="img/project1.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile1.webp"
+          alt=""
+        />
+
+        <img class="project-info__img" src="img/project2.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile2.webp"
+          alt=""
+        />
+
+        <img class="project-info__img" src="img/project3.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile4.webp"
+          alt=""
+        />
+
+        <img class="project-info__img" src="img/project4.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile4.webp"
+          alt=""
+        />
+
+        <img class="project-info__img" src="img/project5.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile5.webp"
+          alt=""
+        />
+
+        <img class="project-info__img" src="img/project6.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile6.webp"
+          alt=""
+        />
+
+        <img class="project-info__img" src="img/project7.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile7.webp"
+          alt=""
+        />
+
+        <img class="project-info__img" src="img/project8.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile8.webp"
+          alt=""
+        />
+
+        <img class="project-info__img" src="img/project9.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile9.webp"
+          alt=""
+        />
+
+        <img class="project-info__img" src="img/project10.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile10.webp"
+          alt=""
+        />
+
+        <img class="project-info__img" src="img/project11.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile11.webp"
+          alt=""
+        />
+
+        <img class="project-info__img" src="img/project12.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile12.webp"
+          alt=""
+        />
+
+        <img class="project-info__img" src="img/project13.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile13.webp"
+          alt=""
+        />
+
+        <img class="project-info__img" src="img/project14.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile14.webp"
+          alt=""
+        />
+
+        <img class="project-info__img" src="img/project15.webp" alt="" />
+        <img
+          class="project-info__img-mobile"
+          src="img/project-mobile15.webp"
+          alt=""
+        />
+
+        <div class="project-info__content">
+          <h1>
+            Ультрамарафон White Bride Ultra Gelendzhik для Running Heroes Russia
+            (RHR), 2022
+          </h1>
+          <span class="project-info__content__text"
+            >Самый массовый горный старт от команды RHR, которая уже 8 лет
+            организовывает ультрамарафоны в самых красивых местах России.
+            Сложнейшая гонка White Bride Ultra Gelendzhik («Белая невеста») с
+            титульной дистанцией 120 километров и набором высоты до 5 550 метров
+            проводится в Геленджике с 2022 года. Для этого события мы создали
+            гармоничное оформление, соответствующее его характеру и окружающей
+            среде, с контрастными и выразительными акцентами. Был разработан
+            фирменный стиль и логотип, отражающие символы гонки, ее
+            выносливость, и место проведения: силуэты горных вершин, живописных
+            пейзажей и рельефа.
+          </span>
+          <span class="project-info__content__info"
+            >Фирменный стиль, событийный брендинг, атрибутика
+          </span>
+        </div>
+      </section>
+      <section class="projects-slider">
+        <div
+          class="swiper projects-swiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a
+                rel="noopener noreferrer"
+                href="/projects/sport-express-30-collection"
+                ><div class="swiper-slide__content">
+                  <img
+                    alt="Спорт-Экспресс"
+                    loading="lazy"
+                    width="1000"
+                    height="1000"
+                    decoding="async"
+                    data-nimg="1"
+                    srcset="img/swiper1.webp"
+                    style="color: transparent"
+                  />
+                  <div class="project__content">
+                    <p class="project__buyer">Ночная Лига (NHLiga)</p>
+                    <p class="project__title">
+                      «Фестиваль хоккея 2021», Сочи, 3-16 мая
+                    </p>
+                    <p class="project__info">
+                      Ключевой образ, событие, брендирование
+                    </p>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a
+                rel="noopener noreferrer"
+                href="/projects/sport-express-30-collection"
+                ><div class="swiper-slide__content">
+                  <img
+                    alt="Спорт-Экспресс"
+                    loading="lazy"
+                    width="1000"
+                    height="1000"
+                    decoding="async"
+                    data-nimg="1"
+                    srcset="img/swiper2.webp"
+                    style="color: transparent"
+                  />
+                  <div class="project__content">
+                    <p class="project__buyer">Спорт Бизнес Консалтинг (SBC)</p>
+                    <p class="project__title">Редизайн сайта «СБК»</p>
+                    <p class="project__info">UX/UI дизайн</p>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a
+                rel="noopener noreferrer"
+                href="/projects/sport-express-30-collection"
+                ><div class="swiper-slide__content">
+                  <img
+                    alt="Спорт-Экспресс"
+                    loading="lazy"
+                    width="1000"
+                    height="1000"
+                    decoding="async"
+                    data-nimg="1"
+                    srcset="img/swiper3.webp"
+                    style="color: transparent"
+                  />
+                  <div class="project__content">
+                    <p class="project__buyer">Newish Sport</p>
+                    <p class="project__title">Newish Sport</p>
+                    <p class="project__info">Бренд, логотип, стиль</p>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a
+                rel="noopener noreferrer"
+                href="/projects/sport-express-30-collection"
+                ><div class="swiper-slide__content">
+                  <img
+                    alt="Спорт-Экспресс"
+                    loading="lazy"
+                    width="1000"
+                    height="1000"
+                    decoding="async"
+                    data-nimg="1"
+                    srcset="img/swiper4.webp"
+                    style="color: transparent"
+                  />
+                  <div class="project__content">
+                    <p class="project__buyer">Ночная Лига (NHLiga)</p>
+                    <p class="project__title">
+                      Редизайн сайта Ночной Хоккейной Лиги
+                    </p>
+                    <p class="project__info">UX/UI-дизайн, лендинг</p>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a
+                rel="noopener noreferrer"
+                href="/projects/sport-express-30-collection"
+                ><div class="swiper-slide__content">
+                  <img
+                    alt="Спорт-Экспресс"
+                    loading="lazy"
+                    width="1000"
+                    height="1000"
+                    decoding="async"
+                    data-nimg="1"
+                    srcset="img/swiper5.webp"
+                    style="color: transparent"
+                  />
+                  <div class="project__content">
+                    <p class="project__buyer">
+                      Международная Федерация Самбо (FIAS)
+                    </p>
+                    <p class="project__title">
+                      Continental championship «Open European SAMBO cup.
+                      Romania», 2021
+                    </p>
+                    <p class="project__info">Логотип, стиль</p>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a
+                rel="noopener noreferrer"
+                href="/projects/sport-express-30-collection"
+                ><div class="swiper-slide__content">
+                  <img
+                    alt="Спорт-Экспресс"
+                    loading="lazy"
+                    width="1000"
+                    height="1000"
+                    decoding="async"
+                    data-nimg="1"
+                    srcset="img/swiper6.webp"
+                    style="color: transparent"
+                  />
+                  <div class="project__content">
+                    <p class="project__buyer">Спорт-Экспресс</p>
+                    <p class="project__title">
+                      Юбилейный мерч к 30-летию «Спорт-Экспресс»
+                    </p>
+                    <p class="project__info">Атрибутика</p>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a
+                rel="noopener noreferrer"
+                href="/projects/sport-express-30-collection"
+                ><div class="swiper-slide__content">
+                  <img
+                    alt="Спорт-Экспресс"
+                    loading="lazy"
+                    width="1000"
+                    height="1000"
+                    decoding="async"
+                    data-nimg="1"
+                    srcset="img/swiper7.webp"
+                    style="color: transparent"
+                  />
+                  <div class="project__content">
+                    <p class="project__buyer">Loxino Islanders</p>
+                    <p class="project__title">Логотип клуба Loxino Islanders</p>
+                    <p class="project__info">Логодизайн</p>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <a
+                rel="noopener noreferrer"
+                href="/projects/sport-express-30-collection"
+                ><div class="swiper-slide__content">
+                  <img
+                    alt="Спорт-Экспресс"
+                    loading="lazy"
+                    width="1000"
+                    height="1000"
+                    decoding="async"
+                    data-nimg="1"
+                    srcset="img/swiper8.webp"
+                    style="color: transparent"
+                  />
+                  <div class="project__content">
+                    <p class="project__buyer">Федерация Хоккея России (FHR)</p>
+                    <p class="project__title">
+                      75 лет великой истории СССР – Канада
+                    </p>
+                    <p class="project__info">Лендинг</p>
+                  </div>
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__layout">
+        <div class="footer__layout__info">
+          <h2>
+            <a href="mailto:hello@sportnoise.ru">hello@sportnoise.ru</a>
+          </h2>
+          <ul class="footer__layout__info__content">
+            <li>
+              <a href="tel:+74957558538">+7 (495) 755-85-38</a>
+            </li>
+            <li>Москва, ул. Полковая д. 3, стр. 6</li>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://t.me/sportnoise"
+                >Telegram-чат</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__layout__info__links">
+            <li>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd3m57aXVTB-0EKbo3nQ_lPyx7SA2KIdw6TqOXr71Q6J8--eQ/viewform"
+                >● Заполнить бриф</a
+              >
+            </li>
+            <li>
+              <a href="#" id="modalWindowOpen">● Дизайн аудит</a>
+            </li>
+            <li>
+              <a href="#">● Пригласить в тендер</a>
+            </li>
+          </ul>
+          <p class="footer__layout__copyright">
+            Digital-решения для развития спортивных и клубных брендов.
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://disk.yandex.ru/d/CFt-0eN46Vt4jQ"
+              >Политика.</a
+            >
+            © 2016 — 2023. Digital-студия SportNoise. ООО Спортнойз.
+          </p>
+        </div>
+        <div class="footer__layout__btns">
+          <div class="footer__layout__btns__wrapper">
+            <button type="button" class="blue-button">
+              <span>Обсудить проект</span>
+            </button>
+          </div>
+          <a href="#toTop" class="footer__layout__btns__to-top">
+            <svg
+              class="text-blue hover:text-hover -rotate-90 hover:cursor-pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="35"
+              fill="none"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M.46 19.464h34.014v-4.361H.46v4.36Z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M33.739 17.29 19.918 3.47 23 .385 39.907 17.29 23 34.195l-3.084-3.084 13.822-13.82Z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const swiper = new Swiper(".projects-swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        breakpoints: {
+          1280: {
+            slidesPerView: 2.4,
+          },
+        },
+      });
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/modalWindow.js"></script>
+  </body>
+</html>
