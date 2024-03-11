@@ -60,7 +60,10 @@
               >
             </li>
             <li class="header__menu__body__forms__link">
-              <a href="#" class="transform-anim" id="modalWindowOpen"
+              <a
+                href="#"
+                class="transform-anim"
+                onclick="modalWindowOpen('modalForm')"
                 >● Дизайн аудит</a
               >
             </li>
@@ -69,7 +72,11 @@
             </li>
           </ul>
           <div class="blue-button__wrapper">
-            <div class="blue-button transform-anim" id="headerMenuForm">
+            <div
+              class="blue-button transform-anim"
+              id="headerMenuForm"
+              onclick="modalWindowOpen('modalForm')"
+            >
               <span>Обсудить проект</span>
             </div>
           </div>
@@ -107,7 +114,7 @@
           <span>Меню</span>
         </div>
       </div>
-      <div class="modal-window" id="modalWindow">
+      <div class="modal-window" id="modalForm">
         <div class="modal-window__wrapper">
           <div class="modal-window__body">
             <div class="modal-window__top">
@@ -115,7 +122,11 @@
                 Получите консультацию <br />
                 или узнайте стоимость проекта
               </h2>
-              <div class="modal-window__close" id="modalWindowClose">
+              <div
+                class="modal-window__close"
+                id="modalForm__close"
+                onclick="modalWindowClose('modalForm')"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -376,7 +387,7 @@
               >
             </li>
             <li>
-              <a href="#" id="modalWindowOpen">● Дизайн аудит</a>
+              <a href="#" id="auditOpen">● Дизайн аудит</a>
             </li>
             <li>
               <a href="#">● Пригласить в тендер</a>
@@ -395,7 +406,11 @@
         </div>
         <div class="footer__layout__btns">
           <div class="footer__layout__btns__wrapper">
-            <button type="button" class="blue-button">
+            <button
+              type="button"
+              class="blue-button"
+              onclick="modalWindowOpen('modalForm')"
+            >
               <span>Обсудить проект</span>
             </button>
           </div>

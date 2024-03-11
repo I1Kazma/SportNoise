@@ -86,4 +86,10 @@
   .projects-slider .swiper-slide .swiper-slide__content .project__content .project__info {
     font-size: 12px;
   }
+}
+.projects-slider .blue-button__wrapper {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=projects-slider.css.map */

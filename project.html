@@ -60,7 +60,10 @@
               >
             </li>
             <li class="header__menu__body__forms__link">
-              <a href="#" class="transform-anim" id="modalWindowOpen"
+              <a
+                href="#"
+                class="transform-anim"
+                onclick="modalWindowOpen('modalForm')"
                 >● Дизайн аудит</a
               >
             </li>
@@ -69,7 +72,11 @@
             </li>
           </ul>
           <div class="blue-button__wrapper">
-            <div class="blue-button transform-anim" id="headerMenuForm">
+            <div
+              class="blue-button transform-anim"
+              id="headerMenuForm"
+              onclick="modalWindowOpen('modalForm')"
+            >
               <span>Обсудить проект</span>
             </div>
           </div>
@@ -107,7 +114,7 @@
           <span>Меню</span>
         </div>
       </div>
-      <div class="modal-window" id="modalWindow">
+      <div class="modal-window" id="modalForm">
         <div class="modal-window__wrapper">
           <div class="modal-window__body">
             <div class="modal-window__top">
@@ -115,7 +122,11 @@
                 Получите консультацию <br />
                 или узнайте стоимость проекта
               </h2>
-              <div class="modal-window__close" id="modalWindowClose">
+              <div
+                class="modal-window__close"
+                id="modalForm__close"
+                onclick="modalWindowClose('modalForm')"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -300,14 +311,42 @@
           alt=""
         />
 
-        <img class="project-info__img" src="img/project2.webp" alt="" />
+        <div class="project-info__content">
+          <img class="project-info__img" src="img/project2.webp" alt="" />
+          <img
+            class="project-info__img-mobile"
+            src="img/project-mobile2.webp"
+            alt=""
+          />
+          <div class="project-info__content__info">
+            <h1>
+              Ультрамарафон White Bride Ultra Gelendzhik для Running Heroes
+              Russia (RHR), 2022
+            </h1>
+            <span class="project-info__content__text"
+              >Самый массовый горный старт от команды RHR, которая уже 8 лет
+              организовывает ультрамарафоны в самых красивых местах России.
+              Сложнейшая гонка White Bride Ultra Gelendzhik («Белая невеста») с
+              титульной дистанцией 120 километров и набором высоты до 5 550
+              метров проводится в Геленджике с 2022 года. Для этого события мы
+              создали гармоничное оформление, соответствующее его характеру и
+              окружающей среде, с контрастными и выразительными акцентами. Был
+              разработан фирменный стиль и логотип, отражающие символы гонки, ее
+              выносливость, и место проведения: силуэты горных вершин,
+              живописных пейзажей и рельефа.
+            </span>
+            <span class="project-info__content__subtext"
+              >Фирменный стиль, событийный брендинг, атрибутика
+            </span>
+          </div>
+        </div>
+
         <img
-          class="project-info__img-mobile"
-          src="img/project-mobile2.webp"
+          class="project-info__img"
+          style="padding-top: 50%"
+          src="img/project3.webp"
           alt=""
         />
-
-        <img class="project-info__img" src="img/project3.webp" alt="" />
         <img
           class="project-info__img-mobile"
           src="img/project-mobile4.webp"
@@ -397,28 +436,6 @@
           src="img/project-mobile15.webp"
           alt=""
         />
-
-        <div class="project-info__content">
-          <h1>
-            Ультрамарафон White Bride Ultra Gelendzhik для Running Heroes Russia
-            (RHR), 2022
-          </h1>
-          <span class="project-info__content__text"
-            >Самый массовый горный старт от команды RHR, которая уже 8 лет
-            организовывает ультрамарафоны в самых красивых местах России.
-            Сложнейшая гонка White Bride Ultra Gelendzhik («Белая невеста») с
-            титульной дистанцией 120 километров и набором высоты до 5 550 метров
-            проводится в Геленджике с 2022 года. Для этого события мы создали
-            гармоничное оформление, соответствующее его характеру и окружающей
-            среде, с контрастными и выразительными акцентами. Был разработан
-            фирменный стиль и логотип, отражающие символы гонки, ее
-            выносливость, и место проведения: силуэты горных вершин, живописных
-            пейзажей и рельефа.
-          </span>
-          <span class="project-info__content__info"
-            >Фирменный стиль, событийный брендинг, атрибутика
-          </span>
-        </div>
       </section>
       <section class="projects-slider">
         <div
@@ -626,6 +643,11 @@
             </div>
           </div>
         </div>
+        <div class="blue-button__wrapper">
+          <a href="/projects" class="blue-button">
+            <span>Возврат к списку</span></a
+          >
+        </div>
       </section>
     </main>
 
@@ -657,7 +679,7 @@
               >
             </li>
             <li>
-              <a href="#" id="modalWindowOpen">● Дизайн аудит</a>
+              <a href="#" id="auditOpen">● Дизайн аудит</a>
             </li>
             <li>
               <a href="#">● Пригласить в тендер</a>
@@ -676,7 +698,11 @@
         </div>
         <div class="footer__layout__btns">
           <div class="footer__layout__btns__wrapper">
-            <button type="button" class="blue-button">
+            <button
+              type="button"
+              class="blue-button"
+              onclick="modalWindowOpen('modalForm')"
+            >
               <span>Обсудить проект</span>
             </button>
           </div>
