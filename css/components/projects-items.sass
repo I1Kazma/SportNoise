@@ -1,0 +1,75 @@
+.projects-items
+    position: relative
+    padding: 156px 128px 0px
+
+    @media (max-width: 1024px)
+        padding: 32px 64px 0px
+
+    @media (max-width: 768px)
+        padding: 32px 0px
+
+    .projects-items__wrapper
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(350px, auto))
+        gap: 20px
+
+    .projects__item
+        overflow: hidden
+
+        .swiper-slide__content
+            gap: 1rem
+            justify-content: center
+            flex-direction: column
+            display: flex
+
+            img
+                height: 303px
+                width: 100%
+                object-fit: cover
+
+            .project__content
+                padding-left: 0px
+                padding-right: 0px
+                flex-direction: column
+                display: flex
+
+                @media (max-width: 768px)
+                    padding-left: 1.25rem
+                    padding-right: 1.25rem
+
+                .project__buyer
+                    letter-spacing: 0.6px
+                    font-size: 13px
+                    letter-spacing: 0.2px
+                    line-height: 16px
+                    font-weight: 500
+                    padding-bottom: 2.5px
+
+                    @media (max-width: 1280px)
+                        letter-spacing: 0.2px
+                        font-size: 12px
+
+                .project__title
+                    padding-bottom: 8px
+                    line-height: 18px
+                    font-weight: 500
+                    letter-spacing: 0.4px
+                    font-size: 17px
+                    @media (max-width: 1280px)
+                        letter-spacing: 0.2px
+
+                    @media (max-width: 1024px)
+                        font-size: 14px
+
+                .project__info
+                    letter-spacing: 0.6px
+                    line-height: 16px
+                    font-weight: 500
+                    font-size: 13px
+                    color: rgb(136, 140, 155)
+
+                    @media (max-width: 1280px)
+                        letter-spacing: 0.2px
+
+                    @media (max-width: 1024px)
+                        font-size: 12px
