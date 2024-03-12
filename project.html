@@ -60,11 +60,8 @@
               >
             </li>
             <li class="header__menu__body__forms__link">
-              <a
-                href="#"
-                class="transform-anim"
-                onclick="modalWindowOpen('modalForm')"
-                >● Дизайн аудит</a
+              <span class="transform-anim" onclick="toggleModal('modalForm')"
+                >● Дизайн аудит</span
               >
             </li>
             <li class="header__menu__body__forms__link">
@@ -75,7 +72,7 @@
             <div
               class="blue-button transform-anim"
               id="headerMenuForm"
-              onclick="modalWindowOpen('modalForm')"
+              onclick="toggleModal('modalForm')"
             >
               <span>Обсудить проект</span>
             </div>
@@ -122,11 +119,7 @@
                 Получите консультацию <br />
                 или узнайте стоимость проекта
               </h2>
-              <div
-                class="modal-window__close"
-                id="modalForm__close"
-                onclick="modalWindowClose('modalForm')"
-              >
+              <div class="modal-window__close" id="modalForm__close">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -679,7 +672,7 @@
               >
             </li>
             <li>
-              <a href="#" id="auditOpen">● Дизайн аудит</a>
+              <span onclick="toggleModal('modalForm')">● Дизайн аудит</span>
             </li>
             <li>
               <a href="#">● Пригласить в тендер</a>
@@ -701,7 +694,7 @@
             <button
               type="button"
               class="blue-button"
-              onclick="modalWindowOpen('modalForm')"
+              onclick="toggleModal('modalForm')"
             >
               <span>Обсудить проект</span>
             </button>
