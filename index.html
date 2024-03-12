@@ -58,7 +58,7 @@
               <a
                 href="#"
                 class="transform-anim"
-                onclick="modalWindowOpen('modalForm')"
+                onclick="toggleModal('modalForm')"
                 >● Дизайн аудит</a
               >
             </li>
@@ -70,7 +70,7 @@
             <div
               class="blue-button transform-anim"
               id="headerMenuForm"
-              onclick="modalWindowOpen('modalForm')"
+              onclick="modalWindowForm('modalForm')"
             >
               <span>Обсудить проект</span>
             </div>
@@ -117,11 +117,7 @@
                 Получите консультацию <br />
                 или узнайте стоимость проекта
               </h2>
-              <div
-                class="modal-window__close"
-                id="modalForm__close"
-                onclick="modalWindowClose('modalForm')"
-              >
+              <div class="modal-window__close" id="modalForm__close">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -376,7 +372,7 @@
       <section class="showreel-banner">
         <div
           id="modalVideoOpen"
-          onclick="modalWindowOpen('videoShowReel')"
+          onclick="toggleModal('videoShowReel', true)"
           class="showreel-banner__wrapper"
         >
           <div class="showreel-banner__wrapper-content">
@@ -759,7 +755,7 @@
       <section class="showreel-banner">
         <div
           id="modalVideoOpen"
-          onclick="modalWindowOpen('videoLogofolio')"
+          onclick="toggleModal('videoLogofolio', true)"
           class="showreel-banner__wrapper"
         >
           <div class="showreel-banner__wrapper-content">
@@ -781,7 +777,7 @@
               data-nimg="1"
               class="img-text"
               style="color: transparent"
-              src="img/showreel.svg"
+              src="img/logofolio.svg"
             />
           </div>
         </div>
