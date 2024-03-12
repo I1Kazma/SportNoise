@@ -1,0 +1,31 @@
+.header .header__wrapper {
+  padding: 32px 128px;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+.header img {
+  max-width: 200px;
+}
+.header .header__menu {
+  position: relative;
+  right: -1344px;
+  opacity: 0;
+  width: 35%;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  background: white;
+  border: 1px solid;
+}
+.header .header__menu.menu-open {
+  right: 0px;
+  opacity: 1;
+}
+.header .header__menu .header__menu__close {
+  padding: 0.5rem 1.75rem;
+}/*# sourceMappingURL=header.css.map */
