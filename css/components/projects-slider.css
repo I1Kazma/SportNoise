@@ -87,7 +87,8 @@
     font-size: 12px;
   }
 }
-.projects-slider .blue-button__wrapper {
+
+section .blue-button__wrapper {
   padding-top: 30px;
   display: flex;
   justify-content: center;

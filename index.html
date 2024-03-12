@@ -404,11 +404,7 @@
         </div>
 
         <div id="videoShowReel" class="showrell-video">
-          <div
-            class="showrell-video__close"
-            id="videoShowReel__close"
-            onclick="modalWindowClose('videoShowReel')"
-          >
+          <div class="showrell-video__close" id="videoShowReel__close">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="19"
@@ -424,20 +420,13 @@
             </svg>
           </div>
 
-          <video
-            autoplay=""
-            loop=""
-            muted=""
-            playsinline=""
-            preload="auto"
-            class="styles_videoContainer__MurWu absolute w-full h-full object-cover"
-          >
+          <video id="videoShowReel__video">
             <source
-              src="video/masthead-video.mp4"
+              src="video/showreel-video.mp4"
               type="video/mp4; codecs=hvc1"
             />
             <source
-              src="video/masthead-video.webm"
+              src="video/showreel-video.webm"
               type="video/webm; codecs=vp9"
             />
           </video>
@@ -769,6 +758,7 @@
 
       <section class="showreel-banner">
         <div
+          id="modalVideoOpen"
           onclick="modalWindowOpen('videoLogofolio')"
           class="showreel-banner__wrapper"
         >
@@ -790,17 +780,14 @@
               decoding="async"
               data-nimg="1"
               class="img-text"
-              src="img/logofolio.svg"
+              style="color: transparent"
+              src="img/showreel.svg"
             />
           </div>
         </div>
 
         <div id="videoLogofolio" class="showrell-video">
-          <div
-            class="showrell-video__close"
-            id="videoLogofolio__close"
-            onclick="modalWindowClose('videoLogofolio')"
-          >
+          <div class="showrell-video__close" id="videoLogofolio__close">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="19"
@@ -816,7 +803,7 @@
             </svg>
           </div>
 
-          <video autoplay="" loop="" muted="" playsinline="" preload="auto">
+          <video id="videoLogofolio__video">
             <source
               src="video/logofolio-video.mp4"
               type="video/mp4; codecs=hvc1"
